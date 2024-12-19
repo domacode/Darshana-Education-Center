@@ -1,0 +1,125 @@
+/* Basic Navbar Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between left, center, and right */
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 20px;
+}
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar Links */
+a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+a.dark-mode {
+    color: #ffffff;
+}
+
+a.light-mode {
+    color: #000000;
+}
+
+
+/* Profile Dropdown */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.profile-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.profile-pic {
+    width: 150px; /* Adjust width as needed */
+    height: 150px; /* Adjust height as needed */
+    border-radius: 50%; /* Makes the picture circular */
+    object-fit: cover; /* Ensures the picture scales well */
+}
+/* Footer Styling */
+.footer {
+    background-color: #000000c7;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;    
+}
+
+.footer-links li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+.form-inline input[type="search"] {
+    width: 200px;
+}
+
+
